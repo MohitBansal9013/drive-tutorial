@@ -8,7 +8,7 @@ export type Item = {
 export const mockData: Item[] = [
   {
     id: "1",
-    name: "Documents",
+    name: "My Documents",
     type: "folder",
     children: [
       { id: "1-1", name: "Report.docx", type: "file" },
