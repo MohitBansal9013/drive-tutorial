@@ -12,7 +12,7 @@ export default function GoogleDriveClone() {
 
   const handleItemClick = (item: Item) => {
     if (item.type === "folder") {
-      setCurrentFolder(item.children || []);
+      setCurrentFolder(item.children ?? []);
       setBreadcrumbs([...breadcrumbs, item]);
     } else {
       // For files, we'll just log a message. In a real app, this would open the file.
