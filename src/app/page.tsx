@@ -27,7 +27,7 @@ export default function GoogleDriveClone() {
     } else {
       const newBreadcrumbs = breadcrumbs.slice(0, index + 1);
       setCurrentFolder(
-        newBreadcrumbs[newBreadcrumbs.length - 1]?.children || [],
+        newBreadcrumbs[newBreadcrumbs.length - 1]?.children ?? [],
       );
       setBreadcrumbs(newBreadcrumbs);
     }
